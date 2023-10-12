@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let test = process.env.REACT_APP_TEST || 'NOTHING'
   return (
     <div className="App">
       <header className="App-header">
@@ -16,6 +17,13 @@ function App() {
 
         <h1>
           {process.env.ANOTHA_ONE || 'NO ANOTHA'}
+        </h1>
+        <h1>
+          variable: {test}
+        </h1>
+
+        <h1>
+          {process.env.REACT_APP_TEST || 'Nothing'}
         </h1>
         <a
           className="App-link"
