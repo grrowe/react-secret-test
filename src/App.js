@@ -9,6 +9,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <h1>
+          {process.env.TEST || 'NO ENV'}
+        </h1>
+
+        <h1>
+          {process.env.ANOTHA_ONE || 'NO ANOTHA'}
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
