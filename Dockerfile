@@ -13,7 +13,7 @@ COPY .git/ ./.git/
 
 RUN ls -a .git/refs/heads/primetime
 
-RUN echo -e "GIT_SHA=$(cat .git/refs/heads/main)"
+RUN git rev-parse HEAD
 
 EXPOSE 3000
 
