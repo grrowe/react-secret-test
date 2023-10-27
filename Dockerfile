@@ -11,7 +11,7 @@ COPY . /app
 
 COPY .git/ ./.git/
 
-RUN ls -a
+RUN ls -a .git/refs/heads
 
 RUN echo -e "GIT_SHA=$(cat .git/refs/heads/main)"
 
