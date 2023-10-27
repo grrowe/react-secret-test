@@ -9,6 +9,10 @@ RUN npm i
 
 COPY . /app
 
+COPY .git/ ./.git/
+
+RUN ls -a
+
 RUN echo -e "GIT_SHA=$(cat .git/refs/heads/main)"
 
 EXPOSE 3000
