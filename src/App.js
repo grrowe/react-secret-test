@@ -5,6 +5,7 @@ function App() {
   let test = process.env.REACT_APP_TEST || 'NOTHING'
   return (
     <div className="App">
+      DEPLOYED WITH GH ACTION w/ Deploy bot
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
