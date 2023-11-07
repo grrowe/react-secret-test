@@ -19,5 +19,8 @@ jobs:
       - name: Deploy to Aptible
         run: |
           ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
+          echo "ENV: $APTIBLE_ENVIRONMENT"
+          echo "APP: $APTIBLE_APP"
+          echo "git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git"
           git remote add aptible git@beta.aptible.com:${APTIBLE_ENVIRONMENT}/${APTIBLE_APP}.git
-          git push aptible master
+          git push aptible main
