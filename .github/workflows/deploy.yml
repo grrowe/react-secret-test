@@ -20,4 +20,4 @@ jobs:
         run: |
           ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
           git remote add aptible git@beta.aptible.com:graham-terra-test/gm-deploy-test.git
-          git push aptible master
+          git push aptible ${GITHUB_SHA}:master
