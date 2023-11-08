@@ -16,6 +16,10 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.APTIBLE_GIT_SSH_KEY }}
+      - name: 
+        run: |
+          docker build -f ./test/Dockerfile.test -t test .
+          docker run test
       - name: Deploy to Aptible
         run: |
           ssh-keyscan beta.aptible.com >> ~/.ssh/known_hosts
