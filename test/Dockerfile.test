@@ -2,6 +2,11 @@ FROM ruby:3.2
 
 WORKDIR /app/test
 
+ADD ./test/Gemfile /app/test/Gemfile
+ADD ./test/Gemfile.lock /app/test/Gemfile.lock
+
+RUN bundle install
+
 COPY . /app
 
 CMD ["bundle", "exec", "ruby", "test.rb"]
