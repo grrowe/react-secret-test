@@ -1,0 +1,40 @@
+GIT
+  remote: https://github.com/aptible/front_matter_parser.git
+  revision: 01187017cb5b20ff1cf92809969ecd385d613aaa
+  ref: 01187017cb5b20ff1cf92809969ecd385d613aaa
+  specs:
+    front_matter_parser (1.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    algolia (2.3.1)
+      faraday (>= 0.15, < 3)
+      faraday-net_http_persistent (>= 0.15, < 3)
+      multi_json (~> 1.0)
+      net-http-persistent
+    connection_pool (2.4.0)
+    faraday (2.7.4)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.2)
+    faraday-net_http_persistent (2.1.0)
+      faraday (~> 2.5)
+      net-http-persistent (~> 4.0)
+    multi_json (1.15.0)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
+    ruby2_keywords (0.0.5)
+
+PLATFORMS
+  aarch64-linux
+
+DEPENDENCIES
+  algolia (~> 2.3)
+  front_matter_parser!
+
+RUBY VERSION
+   ruby 3.2.1p31
+
+BUNDLED WITH
+   2.4.6

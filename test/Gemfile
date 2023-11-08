@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+ruby '~> 3.2'
+
+gem "algolia", "~> 2.3"
+# This gem doesn't pass the sniff test in terms of
+# utilization and maintenance, but it's limited in scope, works,
+# and will only be used with public content, so I'm giving it a pass.
+gem 'front_matter_parser',
+    github: 'aptible/front_matter_parser',
+    ref: '01187017cb5b20ff1cf92809969ecd385d613aaa'
+
