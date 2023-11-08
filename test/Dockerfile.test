@@ -2,8 +2,6 @@ FROM ruby:3.2
 
 WORKDIR /app/test
 
-RUN bundle install
-
 COPY . /app
 
 CMD ["bundle", "exec", "ruby", "test.rb"]
